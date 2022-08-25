@@ -1,1 +1,13 @@
 /* Hoja de estilos principal */
+
+body{
+    background-image:url(/img/fondo.jpg)
+}
+
+.secciones{
+    color:blueviolet;
+    background-color:bisque;
+    border-radius: 20px;
+    padding: 8px;
+    margin: 5px;
+}

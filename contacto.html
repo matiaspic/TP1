@@ -5,8 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/642ab64c83.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css" type="text/css" media="all">
+
+    <a href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>
+    <a href="https://www.facebook.com/" target="_blank"> <i class="fa-brands fa-facebook"></i> </a>
+    <a href="https://wa.me/" target="_blank"> <i class="fa-brands fa-whatsapp"></i> </a>
+<br><br>
+    <nav>
+        <a href="index.html" class="secciones"> Inicio </a> 
+        <a href="productos.html" class="secciones"> Productos </a>
+        <a href="quienes.html" class="secciones"> Quiénes somos </a>
+        <a href="Contacto.html" class="secciones"> Contactanos </a>
+    </nav>
+
 </head>
 <body>
-    
+    <fieldset>
+    <form action=""></form>
+    <legend>Datos de contacto</legend>
+    <label for="nom"> Nombre:* </label>
+    <input type="text" name="nombre" id="nom" placeholder="Ingrese su nombre..." required>
+<br>
+    <label for="email"> Email:* </label>
+    <input type="email" id="email" placeholder="Ingrese su email..." required>
+<br>
+    <label for="mensaje"> Comentario...</label><br>    
+    <textarea name="mensaje" placeholder="Dejanos un mensaje..."></textarea>
+<br>
+
+    <button type="submit">Enviar</button>
+    <input type="reset" value="Borrar">
+
+    </fieldset>
+
 </body>
 </html>
