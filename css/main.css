@@ -18,6 +18,8 @@ footer {
     background-color: rgb(240, 248, 255,.7);
     text-align: center;
     padding-bottom: .7em;
+    font-size: .7em;
+    color: blue;
 }
 nav ul li {
     border-radius: 5px;
@@ -35,7 +37,8 @@ nav ul li a {
     padding: .2em .3em .2em .3em;
 }
 nav ul li a:hover {
-   color: cornflowerblue;    
+   color: cornflowerblue;
+   animation-name: animate__bounce;    
 }
 .logo {
     font-family: 'Merienda', cursive;
