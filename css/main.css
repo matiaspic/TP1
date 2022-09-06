@@ -9,34 +9,36 @@ body{
     
 }
 header {
-    background-color: rgb(98, 96, 96);
+    background-color: rgb(160, 158, 158);
     opacity: .8;
     position:sticky;
     top: 0;
-    height: 2.2em;
+    height: 3.4em;
+    padding-top: 3px;
 }
-
+nav {
+    display: flex;
+    justify-content:center;
+}
 nav ul li {
-    border-radius: 5px;
-    display: inline-block;
+   display: inline-block;
 }
 nav ul {
         list-style:none;
         text-align: center;
-        margin: 0;
 }
 nav ul li a {
     display:block;
     text-decoration: none;
     color:rgb(32, 32, 32);
     padding: .2em .3em .2em .3em;
+    font-family: 'Merienda', cursive ;
     
 }
 nav ul li a:hover {
    color: cornflowerblue;
    animation-name: animate__bounce;    
 }
-
 .logo {
     font-family: 'Merienda', cursive;
     font-size: 1.3em;
@@ -47,10 +49,10 @@ nav ul li a:hover {
 .logo:hover {
  color: rgba(255, 0, 0, 0.282);
 }
-
-
-
-
+.logo1 {
+    border-radius: 50px;
+ }
+ 
 
 /* FOOTER */
 
@@ -59,7 +61,7 @@ footer {
     background-color: grey;
     padding: 50px 0px;
     font-size: 1em;
-   // position: absolute;
+   /* position: absolute;*/
     bottom: 0px;
 }
 
@@ -79,11 +81,11 @@ footer {
 .box_footer .logo2 img{
     width: 100px;
     border-radius: 50px;
-  //  margin-left: 45px;
+  /*  margin-left: 45px;*/
 }
 
 .box_footer .textoFooter{
-    font-family:sans-serif
+    font-family:sans-serif;
     color: rgb(20, 20, 20);
 }
 
