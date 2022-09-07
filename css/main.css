@@ -9,7 +9,7 @@ body{
     
 }
 header {
-    background-color: rgb(160, 158, 158);
+    background-color: #EEEEEE;
     opacity: .8;
     position:sticky;
     top: 0;
@@ -30,24 +30,19 @@ nav ul {
 nav ul li a {
     display:block;
     text-decoration: none;
-    color:rgb(32, 32, 32);
+    color:#F07DEA;
     padding: .2em .3em .2em .3em;
     font-family: 'Merienda', cursive ;
     
 }
 nav ul li a:hover {
    color: cornflowerblue;
-   animation-name: animate__bounce;    
 }
 .logo {
     font-family: 'Merienda', cursive;
     font-size: 1.3em;
     color:rgb(0, 0, 0);
     font-weight: bold;
-}
-
-.logo:hover {
- color: rgba(255, 0, 0, 0.282);
 }
 .logo1 {
     border-radius: 50px;
@@ -58,8 +53,8 @@ nav ul li a:hover {
 
 footer {
     width: 100%;
-    background-color: grey;
-    padding: 50px 0px;
+    background-color: #EEEEEE;
+    padding: 5px 0px;
     font-size: 1em;
    /* position: absolute;*/
     bottom: 0px;
@@ -75,7 +70,7 @@ footer {
 .textoFooter{
     flex-direction: column;
     padding: 25px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .box_footer .logo2 img{
@@ -86,7 +81,7 @@ footer {
 
 .box_footer .textoFooter{
     font-family:sans-serif;
-    color: rgb(20, 20, 20);
+    color: #459af0;
 }
 
 .copyrigh{
@@ -98,5 +93,10 @@ footer {
 }
 
 .box_footer .textoFooter a{
-    
+    text-decoration: none;
+    color:#F07DEA;
+    font-family: 'Merienda', cursive ;
+}
+.box_footer .textoFooter a:hover {
+    color: cornflowerblue;
 }
