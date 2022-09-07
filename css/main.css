@@ -69,21 +69,17 @@ footer {
 
 .textoFooter{
     flex-direction: column;
-    padding: 25px;
-    /* text-align: center; */
+    padding: 5px 0px 0px 30px;
 }
-
 .box_footer .logo2 img{
     width: 100px;
     border-radius: 50px;
   /*  margin-left: 45px;*/
 }
-
 .box_footer .textoFooter{
     font-family:sans-serif;
     color: #459af0;
 }
-
 .copyrigh{
     margin: auto;
     padding:  0px 4 px;
@@ -91,7 +87,6 @@ footer {
     font-size: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
 .box_footer .textoFooter a{
     text-decoration: none;
     color:#F07DEA;
@@ -99,4 +94,9 @@ footer {
 }
 .box_footer .textoFooter a:hover {
     color: cornflowerblue;
+}
+.texto2footer {
+    text-align: center;
+    padding: 1em;
+    color: #459af0;
 }
