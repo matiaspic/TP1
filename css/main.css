@@ -74,22 +74,23 @@ nav ul li a:hover {
     background-color: #A460ED;
 }
 
-/* FOOTER */
+/* FOOTER  */
 
 footer {
     width: 100%;
-    background-color: #EEEEEE;
     padding: 5px 0px;
+    background-color: #999;
     font-size: 1em;
    /* position: absolute;*/
-    bottom: 0px;
+    bottom: 0p
 }
 
 .box_footer{
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
-    margin: auto;
+    margin: 10px auto;
+    
 }
 
 .textoFooter{
@@ -111,6 +112,7 @@ footer {
     text-align: center;
     font-size: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 }
 .box_footer .textoFooter a{
     text-decoration: none;
@@ -124,6 +126,7 @@ footer {
     text-align: center;
     padding: 1em;
     color: #459af0;
+}
 }
 /*animacion iconos*/
 @keyframes icon_anim {
@@ -159,3 +162,125 @@ footer {
     /*redimensionamos las fuentes*/
     
 }
+
+
+
+
+
+
+
+
+/* contacto */
+
+.flex-conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    flex-wrap: wrap; 
+    margin: 5%;
+    flex-direction: row-reverse;
+}
+
+.form{
+    text-align: center;
+    flex: 2;
+    margin: 5%;
+    min-width: 300px;
+    order: 9;
+    
+}
+
+.imagen-form{
+    flex: 1;  
+    padding: 15px;  
+}
+
+.form__box{
+    margin: 5px 0;
+    display: flex;
+}
+
+.imagen-form img{
+    border-radius: 30%;
+    margin: 10px;
+    display: flex;
+    min-height: 150px;
+    max-height: 350px;
+} 
+
+form div input, form div textarea, form div button {
+    background-color: grey;
+    border: none;
+    border-bottom: solid 0.5px bisque;
+    width: 100% ;
+    outline: none;
+    padding: 20px;
+    
+}
+.imagen-form img{
+    margin: auto;
+    order: 10;
+    
+}
+
+.form__texto{
+    resize:none;
+    height: 100px;
+}
+
+.form__box-enviar{
+    background-color: bisque;
+    margin-top: 4px;
+    border: solid 3px #555;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.boxContacto{
+    display: flex;
+   flex-direction: column;
+   order: -1;
+   text-align: center;
+   flex: 1;
+}
+
+
+form div input:focus{
+    background: linear-gradient(to top, transparent, 1%, grey);
+    background-color: #555;
+    border-bottom: solid 0.5px bisque;
+    
+}
+
+form div textarea:focus{
+    background: linear-gradient(to top, transparent, 1%, grey);
+    background-color: #555;
+    border-bottom: solid 0.5px bisque;
+}
+
+form div input::placeholder{
+    color: #666;
+    
+}
+
+form div textarea::placeholder{
+    color: #666;
+}
+form div input:hover{
+    background: linear-gradient(to top, transparent, 1%, grey);
+    background-color: #555;
+    border-bottom: solid 0.5px bisque;
+    
+}
+
+form div textarea:hover{
+    background: linear-gradient(to top, transparent, 1%, grey);
+    background-color: #555;
+    border-bottom: solid 0.5px bisque;
+}
+.form__box-enviar:hover{
+    background-color: #eed3b3;
+}
+
