@@ -55,14 +55,15 @@ nav ul li a:hover {
   right: 0;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 160px;
+  min-width: 8em;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   font-family: "Merienda", cursive;
   font-size: 1.1em;
-  text-align: center;
+  text-align:right;
+  padding:.3em;
 }
-.menu_oculto a {
+.menu_oculto > a {
     text-decoration: none;
     display: block;
     padding: .2em .2em;
@@ -72,6 +73,12 @@ nav ul li a:hover {
 }
 .menu_oculto a:hover { 
     background-color: #A460ED;
+}
+.redes {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    padding: 0 1em;
 }
 
 /* FOOTER  */
@@ -127,7 +134,7 @@ footer {
     padding: 1em;
     color: #459af0;
 }
-}
+
 /*animacion iconos*/
 @keyframes icon_anim {
     0%{
@@ -152,8 +159,7 @@ footer {
     .icono_menu {
         display: block;
     }
-    
-}
+ }
 @media screen and (min-width:621px) and (max-width:1023px) {
     /*redimensionamos las fuentes*/
     
