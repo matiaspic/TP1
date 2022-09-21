@@ -1,7 +1,7 @@
 /* Hoja de estilos principal */
 body{
-    background: rgba(0, 0, 0, 0.603);
-    background: radial-gradient(circle, rgba(0, 0, 0, 0.516) 10%, rgba(240, 240, 240, 0.824) 100%);
+    /* background: rgba(0, 0, 0, 0.603);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.516) 10%, rgba(240, 240, 240, 0.824) 100%); */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0px;
     position: relative;
@@ -9,7 +9,7 @@ body{
     
 }
 header {
-    background-color: #EEEEEE;
+    background-color: #F3F3F3;
     opacity: .8;
     position:sticky;
     top: 0;
@@ -32,7 +32,7 @@ nav ul li a {
     text-decoration: none;
     color:#F07DEA;
     padding: .2em .3em .2em .3em;
-    font-family: 'Merienda', cursive ;
+    font-family: 'Libre Franklin', sans-serif;
     
 }
 nav ul li a:hover {
@@ -55,18 +55,18 @@ nav ul li a:hover {
   right: 0;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 8em;
+  min-width: 12em;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  font-family: "Merienda", cursive;
+  font-family: 'Libre Franklin', sans-serif;
   font-size: 1.1em;
   text-align:right;
-  padding:.3em;
+  padding:.6em;
 }
 .menu_oculto > a {
     text-decoration: none;
     display: block;
-    padding: .2em .2em;
+    padding: 1em 1em;
 }
 .icono_menu:hover .menu_oculto {
     display: block;
@@ -102,9 +102,9 @@ nav ul li a:hover {
 footer {
     width: 100%;
     padding: 5px 0px;
-    background-color: #999;
+    background-color: #F3F3F3;
     font-size: 1em;
-   /* position: absolute;*/
+    opacity: .8;
     bottom: 0px;
 }
 
@@ -140,10 +140,10 @@ footer {
 .box_footer .textoFooter a{
     text-decoration: none;
     color:#F07DEA;
-    font-family: 'Merienda', cursive ;
+    font-family: 'Libre Franklin', sans-serif;
 }
 .box_footer .textoFooter a:hover {
-    color: cornflowerblue;
+    color: #6495ed;
 }
 .texto2footer {
     text-align: center;
@@ -186,19 +186,15 @@ footer {
     /*redimensionamos las fuentes*/
         
 }
-
 /* contacto */
-
 .flex-conteiner {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: grey;
     flex-wrap: wrap; 
     margin: 5%;
     flex-direction: row-reverse;
 }
-
 .form{
     text-align: center;
     flex: 2;
@@ -207,99 +203,60 @@ footer {
     order: 9;
     
 }
-
 .imagen-form{
     flex: 1;  
     padding: 15px;  
 }
-
 .form__box{
     margin: 5px 0;
     display: flex;
 }
-
 .imagen-form iframe{
-    margin: 10px;
     display: flex;
     min-height: 150px;
     max-height: 350px;
     
 } 
-
 form div input, form div textarea, form div button {
-    background-color: grey;
+    
     border: none;
-    border-bottom: solid 0.5px bisque;
+    border-bottom: solid 2px bisque;
     width: 100% ;
     outline: none;
     padding: 20px;
-    
-    
 }
-.imagen-form iframe{
-    margin: auto;
-    order: 10;
-    
-    
-}
-
 .form__texto{
     resize:none;
     height: 100px;
 }
-
 .form__box-enviar{
-    background-color: bisque;
+    background-color: #f8debe;
     margin-top: 4px;
-    border: solid 3px #555;
+    border: solid .5px #fccf99;
     font-weight: bold;
     font-size: 20px;
 }
-
-
 .boxContacto{
-    display: flex;
+   display: flex;
    flex-direction: column;
    order: -1;
    text-align: center;
    flex: 1;
 }
-
-
 form div input:focus{
-    background: linear-gradient(to top, transparent, 1%, grey);
-    background-color: #555;
-    border-bottom: solid 0.5px bisque;
-    
+    background-color: #e9e7e478;
 }
-
 form div textarea:focus{
-    background: linear-gradient(to top, transparent, 1%, grey);
-    background-color: #555;
-    border-bottom: solid 0.5px bisque;
+    background-color: #e9e7e478; 
 }
-
 form div input::placeholder{
     color: #666;
-    
 }
-
 form div textarea::placeholder{
     color: #666;
 }
-form div input:hover{
-    background: linear-gradient(to top, transparent, 1%, grey);
-    background-color: #555;
-    border-bottom: solid 0.5px bisque;
-    
-}
-
-form div textarea:hover{
-    background: linear-gradient(to top, transparent, 1%, grey);
-    background-color: #555;
-    border-bottom: solid 0.5px bisque;
-}
 .form__box-enviar:hover{
     background-color: #eed3b3;
+    cursor:pointer;
 }
 
