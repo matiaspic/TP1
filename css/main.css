@@ -296,7 +296,12 @@ form div textarea::placeholder{
     background-color: #eed3b3;
     cursor:pointer;
 }
-
+.avisos {
+    color:red;
+    font-size: .8em;
+    position: absolute;
+    margin-left: .1em;
+}
 
 /* faqs */
 

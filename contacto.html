@@ -46,20 +46,24 @@
     </nav>
   </header>
 <div class="flex-conteiner"> 
-    <form class="form" action="bin/mostrar_datos.html">
+    <form class="form" action="bin/mostrar_datos.html" id="formu">
 
                     <div class="form__box">
-                        <input type="email" name="email" class="form__email" placeholder="Ingresá tu email" required>
+                        <input type="email" name="email" class="form__email" placeholder="Ingresá tu email">
+                        <br>
+                        <div id="aviso1" class="avisos"></div>
                     </div>
                     <div class="form__box">
-                        <input type="text" name="asunto" class="form__asunto" placeholder="Ingresá el asunto" required>
+                        <input type="text" name="asunto" class="form__asunto" placeholder="Ingresá el asunto">
+                        <div id="aviso2" class="avisos"></div>
                     </div>
                     <div class="form__box">
-                        <textarea name="mensaje" class="form__texto" placeholder="Dejanos un mensaje" required></textarea>
+                        <textarea name="mensaje" class="form__texto" placeholder="Dejanos un mensaje"></textarea>
+                        <div id="aviso3" class="avisos"></div>
                     </div>            
 
                     <div class="form__box">  
-                        <button type="submit" class="form__box-enviar">Enviar</button>
+                        <button type="button" class="form__box-enviar" onclick="validar()">Enviar</button>
 
                     </div> 
             
@@ -96,8 +100,34 @@
         <b>PovStore</b></p>
     </div>
 </footer>
-
-
-
+<script>
+    function validar_email(dato){
+        return /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test(dato);
+    }
+    function validar(){
+        //limpio los mensjaes
+        document.querySelectorAll(".avisos").forEach(e => e.innerHTML="" );
+        //controlo los campos del formulario
+        let email=document.forms["formu"]["email"].value;
+        let asunto=document.forms["formu"]["asunto"].value;
+        let mensaje=document.forms["formu"]["mensaje"].value;
+        if (!validar_email(email)) {
+            document.querySelector("#aviso1").innerHTML="Por favor ingrese un email correcto.";
+            document.querySelector("input[name='email']").focus();
+            return;
+        }
+        if (asunto.length == 0) {
+            document.querySelector("#aviso2").innerHTML="Por favor ingrese un asunto.";
+            document.querySelector("input[name='asunto']").focus();
+            return;
+        } 
+        if (mensaje.length == 0) {
+            document.querySelector("#aviso3").innerHTML="Por favor ingrese un mensaje.";
+            document.querySelector("textarea[name='mensaje']").focus();
+            return;
+        } 
+        document.forms["formu"].submit();
+    }
+</script>
 </body>
 </html>
