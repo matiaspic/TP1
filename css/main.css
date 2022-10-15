@@ -230,12 +230,6 @@ footer {
         margin: 0 10px 10px 0px;
     }
 
-    html body footer div.box_footer{
-        font-size: small;
-
-    }
-
-
 }
 @media screen and (min-width:621px) and (max-width:1023px) {
     /*redimensionamos las fuentes*/
