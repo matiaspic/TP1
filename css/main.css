@@ -80,7 +80,11 @@ nav ul li a:hover {
 }
 .menu_oculto a:hover { 
     background-color: #aaa;
+    
 }
+
+
+
 .redes {
     display: flex;
     width: 85%;
@@ -200,17 +204,36 @@ footer {
         margin: 0;
     }
     html body div.flex-conteiner div.imagen-form{
-        margin: 5% 5% 10px 5%;
-        margin-left: 4.5%;
-        margin-right: 4.5%;
-    }
-    
+        margin: 5% 4.5% 10px 4.5%;
+    }    
 
-    html body div.flex-conteiner form#formu.form {
-        
+    html body div.flex-conteiner form#formu.form {        
         margin: 5% 4.5% 10px 4.5%;
     }
 
+    html body div.productos{
+        margin: 5% auto;
+    }
+
+    html body div.productos div.imagen div.imagen_text{
+        width: auto;
+        padding-bottom: 8%;
+    }
+
+    .imagen img {
+        width: 80%;
+    } 
+
+    html body footer div.box_footer div.textoFooter{
+        padding-top: 30px;
+        padding-left: 0;
+        margin: 0 10px 10px 0px;
+    }
+
+    html body footer div.box_footer{
+        font-size: small;
+
+    }
 
 
 }
