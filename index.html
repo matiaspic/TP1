@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&family=Merienda&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" type="text/css" media="all">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
     <header>
@@ -112,7 +113,22 @@
             <div class="copyrigh"> <hr>
                 <p>Todos los derechos reservados ©
                 <b>PovStore</b></p>
+                <span id="temp"></span>
             </div>
         </footer>
+<script>
+//llamada a la api
+async function obtengo_clima() {
+try {
+    const response = await axios('https://api.openweathermap.org/data/2.5/weather?q=BUENOS%20AIRES,AR&appid=9c20a740efddb4f76a41c458d34f1fb1&units=metric&lang=es');
+    let temp=parseInt(response.data.main.temp);
+    let ster=parseInt(response.data.main.feels_like);
+    document.querySelector("#temp").innerHTML=response.data.name+" Temp. "+temp+"C S.T. "+ster+"C "+response.data.weather[0].description;
+} catch (error) {
+    console.error(error);
+  }
+}
+obtengo_clima(); 
+</script>
 </body>
 </html>
